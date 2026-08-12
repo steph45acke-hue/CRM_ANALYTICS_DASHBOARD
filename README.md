@@ -28,52 +28,34 @@ To eliminate these enterprise reporting inefficiencies, I developed an automated
 
 ## 🗄️ Database Architecture & Visual Proofs
 
-Here is a look at the underlying enterprise database schema and the actual execution steps inside MySQL Workbench and VS Code:
+Here is a look at the underlying enterprise database schema and the actual execution steps inside MySQL Workbench:
 
 * **MySQL Relational Schema & Tables (`customers`):**
-  ![Customers Table Setup](Screenshot%20(94)_2.jpg)
+  ![Customers Table Setup](Screenshot%20(94)_3.jpg)
 
 * **Multi-Table Deals & Transactions (`deals`):**
-  ![Deals Table Setup](Screenshot%20(95)_2.jpg)
+  ![Deals Table Setup](Screenshot%20(95)_3.jpg)
 
 * **Interactions Tracking Schema:**
-  ![Interactions Data Setup](Screenshot%20(96)_2.jpg)
+  ![Interactions Data Setup](Screenshot%20(96)_3.jpg)
 
 * **Support Tickets Tracking Table:**
-  ![Support Tickets Data](Screenshot%20(97)_2.jpg)
+  ![Support Tickets Data](Screenshot%20(97)_3.jpg)
 
 * **Advanced SQL Aggregation (Finding Top Regions by Closed-Won Revenue):**
-  ![SQL Query Revenue Analysis](Screenshot%20(98)_2.jpg)
+  ![SQL Query Revenue Analysis](Screenshot%20(98)_3.jpg)
 
 * **Handling Missing NULL Values in Customer Health Metrics:**
-  ![Null Handling COALESCE](Screenshot%20(99)_2.jpg)
+  ![Null Handling COALESCE](Screenshot%20(99)_3.jpg)
 
 ---
 
-## 💻 Python Execution Workflow
+## 💻 Python Execution & Final Visualization
 
-Here is how the script executes live in the terminal environment step-by-step:
+Here is how the final Matplotlib visualization output is rendered from the analytics engine:
 
-* **Step 1: Establishing the Database Connection:**
-  ![Database Connection Success](Screenshot%20(100).png)
-
-* **Step 2: Pulling and Structuring Data into a Pandas DataFrame:**
-  ![Pandas DataFrame Output](Screenshot%20(101).png)
-
-* **Step 3: Calculating CRM Sales Metrics (Total Spend & Deal Frequency):**
-  ![CRM Analytics DataFrame](Screenshot%20(102).png)
-
-* **Step 4: Final Enhanced Analytics with Computed Average Order Value (AOV):**
-  ![Enhanced CRM Analytics DataFrame](Screenshot%20(103).png)
-
-* **Step 5: Automated CSV Report Exporting:**
-  ![CSV Report Export Success](Screenshot%20(104).png)
-
-* **Step 6: Automated Chart Visualization Generation:**
-  ![Chart Image Export Success](Screenshot%20(105).png)
-
-* **Step 7: Final Visual Matplotlib Output Rendered:**
-  ![Final Revenue Bar Chart Visualization](Screenshot%20(106)_2.png)
+* **Final Visual Revenue Bar Chart Visualization:**
+  ![Final Revenue Bar Chart Visualization](Screenshot%20(106)_3.png)
 
 ---
 
@@ -82,10 +64,10 @@ Here is how the script executes live in the terminal environment step-by-step:
 Running this pipeline instantly answers vital commercial questions, backed by direct cryptographic and query-level proof extracted straight from our database and execution logs:
 
 1. **Which enterprise clients generate the highest total revenue?**
-   * *Verified Proof:* As demonstrated in the execution DataFrame (`Screenshot (103).png`) and the final rendered Matplotlib bar chart (`Screenshot (106)_2.png`), **Delta Financial** leads all accounts with a total revenue contribution of **$1,080,000.00**, followed by **Beta Logistics** at **$720,000.00** and **Alpha Tech** at **$540,000.00**.
+   * *Verified Proof:* As demonstrated in the execution charts and database aggregations, **Delta Financial** leads all accounts with a total revenue contribution of **$1,080,000.00**, followed by **Beta Logistics** at **$720,000.00** and **Alpha Tech** at **$540,000.00**.
 
 2. **Who buys frequently versus who spends high per individual order?**
-   * *Verified Proof:* The analytics engine highlights a clear divergence in customer purchasing behavior. **Alpha Tech (`customer_id: 1`)** engages in high-frequency purchasing with **18 total deals** but a lower Average Order Value of **$30,000.00**. Conversely, **Delta Financial (`customer_id: 4`)** utilizes a high-value, lower-frequency model with **9 deals** but commands the highest Average Order Value at **$120,000.00** (`Screenshot (103).png`).
+   * *Verified Proof:* The analytics engine highlights a clear divergence in customer purchasing behavior. **Alpha Tech (`customer_id: 1`)** engages in high-frequency purchasing with **18 total deals** but a lower Average Order Value of **$30,000.00**. Conversely, **Delta Financial (`customer_id: 4`)** utilizes a high-value, lower-frequency model with **9 deals** but commands the highest Average Order Value at **$120,000.00**.
 
 3. **What is the exact Average Order Value (AOV) across all active commercial accounts?**
    * *Verified Proof:* Programmatically computed via Pandas vector division (`total_spent / total_deals`), the precise AOV breakdown per account is verified as follows:
