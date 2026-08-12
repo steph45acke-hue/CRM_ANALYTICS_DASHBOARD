@@ -52,7 +52,25 @@ Here is a look at the underlying enterprise database schema and the actual execu
 
 ## 💻 Python Execution & Final Visualization
 
-Here is how the final Matplotlib visualization output is rendered from the analytics engine:
+Here is how the Python ETL script executes step-by-step in the terminal environment, culminating in the automated CSV export and visual chart rendering:
+
+* **Step 1: Establishing Database Connection:**
+  ![Database Connection Success](Screenshot%20(100).png)
+
+* **Step 2: Structuring Data into Pandas DataFrames:**
+  ![Pandas DataFrame Output](Screenshot%20(101).png)
+
+* **Step 3: Calculating CRM Sales Metrics (Total Spend & Deal Frequency):**
+  ![CRM Analytics DataFrame](Screenshot%20(102).png)
+
+* **Step 4: Computing Average Order Value (AOV):**
+  ![Enhanced CRM Analytics DataFrame](Screenshot%20(103).png)
+
+* **Step 5: Automated CSV Report Exporting:**
+  ![CSV Report Export Success](Screenshot%20(104).png)
+
+* **Step 6: Automated Chart Visualization Generation & Final Render:**
+  ![Chart Image Export Success](Screenshot%20(105).png)
 
 * **Final Visual Revenue Bar Chart Visualization:**
   ![Final Revenue Bar Chart Visualization](Screenshot%20(106).png)
@@ -61,7 +79,7 @@ Here is how the final Matplotlib visualization output is rendered from the analy
 
 ## ❓ Questions Answered with Verified Proof
 
-Running this pipeline instantly answers vital commercial questions, backed by direct cryptographic and query-level proof extracted straight from our database and execution logs:
+Running this pipeline instantly answers vital commercial questions, backed by direct query-level proof extracted straight from our database and execution logs:
 
 1. **Which enterprise clients generate the highest total revenue?**
    * *Verified Proof:* As demonstrated in the execution charts and database aggregations, **Delta Financial** leads all accounts with a total revenue contribution of **$1,080,000.00**, followed by **Beta Logistics** at **$720,000.00** and **Alpha Tech** at **$540,000.00**.
