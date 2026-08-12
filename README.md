@@ -31,22 +31,22 @@ To eliminate these enterprise reporting inefficiencies, I developed an automated
 Here is a look at the underlying enterprise database schema and the actual execution steps inside MySQL Workbench:
 
 * **MySQL Relational Schema & Tables (`customers`):**
-  ![Customers Table Setup](Screenshot%20(94)_3.jpg)
+  ![Customers Table Setup](Screenshot%20(94).png)
 
 * **Multi-Table Deals & Transactions (`deals`):**
-  ![Deals Table Setup](Screenshot%20(95)_3.jpg)
+  ![Deals Table Setup](Screenshot%20(95).png)
 
 * **Interactions Tracking Schema:**
-  ![Interactions Data Setup](Screenshot%20(96)_3.jpg)
+  ![Interactions Data Setup](Screenshot%20(96).png)
 
 * **Support Tickets Tracking Table:**
-  ![Support Tickets Data](Screenshot%20(97)_3.jpg)
+  ![Support Tickets Data](Screenshot%20(97).png)
 
 * **Advanced SQL Aggregation (Finding Top Regions by Closed-Won Revenue):**
-  ![SQL Query Revenue Analysis](Screenshot%20(98)_3.jpg)
+  ![SQL Query Revenue Analysis](Screenshot%20(98).png)
 
 * **Handling Missing NULL Values in Customer Health Metrics:**
-  ![Null Handling COALESCE](Screenshot%20(99)_3.jpg)
+  ![Null Handling COALESCE](Screenshot%20(99).png)
 
 ---
 
@@ -55,7 +55,7 @@ Here is a look at the underlying enterprise database schema and the actual execu
 Here is how the final Matplotlib visualization output is rendered from the analytics engine:
 
 * **Final Visual Revenue Bar Chart Visualization:**
-  ![Final Revenue Bar Chart Visualization](Screenshot%20(106)_3.png)
+  ![Final Revenue Bar Chart Visualization](Screenshot%20(106).png)
 
 ---
 
