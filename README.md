@@ -1,4 +1,7 @@
 # Enterprise CRM Analytics Engine
+<p align="center">
+  <img src="banner.jpg" alt="Enterprise CRM Analytics Engine Banner" width="100%">
+</p>
 
 ---
 
